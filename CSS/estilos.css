@@ -45,11 +45,11 @@ table {
 /*Comienzo del diseño para pantalla PC*/
 
 body{
-	color: black;
+	
 	background-color: white;
 }
 p{
-	
+	color: black;
 }
 
 header{
