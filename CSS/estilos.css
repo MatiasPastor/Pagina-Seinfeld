@@ -42,29 +42,48 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /*Comienzo del diseño para pantalla PC*/
 
 body{
-	
 	background-color: white;
-}
-p{
-	color: black;
+	size: 100%;
 }
 
 header{
+	max-width: 90%;
+}
+
+body header a{
+	background-color: black;
+	display:flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 0%;
+
+}
+body header ul{
+	background-color: black;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	border: 5px firebrick dotted;
+	
+}
+
+body header ul li{
+	margin-left: 3rem;
+	margin-right: 3rem;
+	font-size: 3rem;
+	color: white;
+	
+	
+}
+
+body.Principal{
 	display: flex;
-	justify-content: space-around;
-	margin-top: 3%;
-	margin-bottom: 5%;
+	justify-content: center;
 
 }
-header a{
-	display: block;
-	height: auto;
-	width: auto;
-}
 
-header ul{
-	display: block;
-}
