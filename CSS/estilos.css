@@ -42,49 +42,94 @@ table {
 	border-spacing: 0;
 }
 
+/* TODO LO ANTERIOR ES RESETEADOR DE VALORES */
+
 
 
 /*Comienzo del diseño para pantalla PC*/
+p , h1 , h2 , h3{
+	color: white;
+}
 
 body{
-	background-color: white;
+	background-color: black;
 }
 
 header{
 	max-width: 100%;
-	display:flex;
+	display:flex ;
 	flex-flow:column nowrap;
 	justify-content:space-around;
 	margin-left: 5%;
 	margin-right: 5%;
+	background-color: black;
 }
 
-body header a{
+header a{
 	background-color: black;
-	display:flex;
+	display: flex;
+	flex-flow: row nowrap;
 	justify-content: center;
 	margin-bottom: 20px;
 	margin-top: 0%;
 
 }
+
+
 body header ul{
-	background-color: black;
+	background-color: rgb(255, 208, 0);
 	display:flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
-	border: 5px firebrick dotted;
+	justify-content: space-around;
+	border-radius: 5px;
+	padding: 15px 0px 7px 15px;
 	
 }
 
-body header ul li{
-	margin-left: 3rem;
-	margin-right: 3rem;
-	font-size: 3rem;
-	color: white;
-	
-	
+body header nav ul li{
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px; 
+	padding-left: 8px;
+	padding-right: 8px; 
+	font-size: 2rem;
+	text-shadow: 1px 4px 4px;
 }
 
+body header nav ul li a{
+	background-color: rgb(255, 208, 0);
+	color: red;
+	text-decoration: none;
+	padding-bottom: 0%;
+	margin-top: 8px;
+}
+
+footer{
+	background-color: rgb(255, 208, 0);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	/* margin-bottom: px;
+	margin-top: 0%; */
+}
+
+footer div{
+	width:  400px;
+	height: 100px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+footer div p{
+	color: red;
+	font-size: 1.4rem;
+}
+
+footer img{
+	width: 120px;
+	height: 90px;
+}
 body.Principal{
 	display: flex;
 	justify-content: center;
