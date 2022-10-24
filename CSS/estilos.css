@@ -115,7 +115,7 @@ footer{
 }
 
 footer div{
-	width:  400px;
+	width:  450px;
 	height: 100px;
 	padding-top: 50px;
 	text-align: center;
@@ -124,11 +124,19 @@ footer div{
 footer div p{
 	color: red;
 	font-size: 1.4rem;
+	font-style: italic;
 }
 
 footer img{
-	width: 120px;
+	width: 130px;
 	height: 90px;
+	margin-top: 20px;
+}
+
+footer #instagram{
+	width: 55px;
+	height: 50px;
+	margin-top: 45px;
 }
 body.Principal{
 	display: flex;
