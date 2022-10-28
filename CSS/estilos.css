@@ -77,7 +77,12 @@ header a{
 
 header a img{
 	width: 90%;
-	height: 90%;
+	height: 90%; 
+	transition: all 0.2s ease;
+}
+
+header a img:hover{
+	transform: rotate(-5deg);
 }
 
 body header nav{
@@ -86,16 +91,17 @@ body header nav{
 
 body header nav ul{
 	background-color: rgb(255, 208, 0);
+	height: 30%;
 	display:flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	border-radius: 5px;	
 	margin-top: 4%;
 	margin-right: 5%;
+	
 }
 
  body header nav ul li{	  
-	font-size: 1.5rem;
 	text-shadow: 1px 4px 4px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -107,13 +113,17 @@ body header nav ul li a{
 	background-color: rgb(255, 208, 0);
 	color: red;
 	text-decoration: none;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+	font-size: 1.6rem;
+	width: 100%;
 	
 } 
 
 body header nav ul li a:hover{
-	text-decoration: underline;
+	font-size: 2rem;
 	font-weight: bold;
-	transition: all 0.3s ease-in-out;
+	
 }
 
 body header nav ul li a:active{
@@ -135,7 +145,7 @@ footer{
 }
 
 footer div{
-	width:  30%;
+	width:  40%;
 	padding-top: 50px;
 	text-align: center;
 }
@@ -145,20 +155,45 @@ footer div p{
 	font-size: 1.4rem;
 	font-style: italic;
 	font-weight: bold;
-	
-	
+	transition: all 0.2s ease;	
+}
+footer div p:hover{
+	font-size: 1.5rem;
 }
 
+footer a{
+	width: 9%;
+	height: 5%;
+	transition: all 0.1s ease;
+}
+
+footer a:hover{
+	width: 10%;
+	height: 6%;
+}
 footer img{
-	width: 130px;
-	height: 90px;
+	width: 100%;
+	height: 100%;
 	margin-top: 20px;
+	
+	/* width: 130px;
+	height: 90px;
+	margin-top: 20px; */
 }
 
 footer #instagram{
-	width: 55px;
-	height: 50px;
+	 width: 63px;
+	height: 60px;
 	margin-top: 45px;
+	transition: all 0.1s ease;
+}
+
+
+footer #instagram:hover{
+	
+	width: 4.4rem;
+	height: 4.4rem;
+	transform: rotate(7deg);
 }
 
 /*FIN FOOTER*/
@@ -189,6 +224,7 @@ article#art1{
 	margin-left: auto;
 	margin-right: auto;
 	border: 5px solid rgb(206, 202, 202);
+	transition:  0.4s ease;
 }
 
 
@@ -255,11 +291,15 @@ section article#art2 div{
 	border-style: outset;
 	border-color: rgb(255, 255, 255);
 	opacity: 0.85;
-	max-width: 97%;
+	max-width: 85%;
 	margin-bottom: 2%;
 	padding-bottom: 2%;
 	padding-left: 5%;
 	padding-right: 5%;
+	 transition: all 0.2s ease; 
+}
+section article#art2 div:hover{
+	max-width: 90%;
 }
 
 section article#art2 div h2{
@@ -293,11 +333,13 @@ section.contenedor_tabla table{
 	width: 90%;
 	border-collapse: collapse;
 	border-radius: 2rem;
+	transition: all 0.3s ease;
 	
 }
 
 section.contenedor_tabla table:hover{
-	box-shadow: 0 0.1rem 0.8rem red;
+	box-shadow: 0.1rem 1.1rem 1.8rem red;
+	width: 93%;
 }
 
 
@@ -309,8 +351,10 @@ table tr th{
 	font-weight: bolder;
 	font-style: oblique;
 	text-decoration: underline;
-	border-bottom: 1rem solid red ;	
+	border-bottom: 1rem solid red ;
+	transition: all 0.2s ease;	
 }
+
 
 tr:nth-child(even) td{
 	background-color: rgb(255, 200, 0);
@@ -352,6 +396,11 @@ section.Critica h1{
 	border: 1.6rem solid rgb(255, 200, 0);
 	border-radius: 2rem;
 	text-shadow: 1px 2px 4px;
+	transition: all 0.3s ease;
+}
+
+section.Critica h1:hover{
+	font-size: 3.6rem;
 }
 
 section.Critica h1:hover{
@@ -375,6 +424,11 @@ section.Critica div h2{
 	padding-top: 0.5%;
 	font-size: 3rem;
 	font-weight: bold;
+	transition: all 0.6s ease;
+}
+
+section.Critica div h2:hover{
+	font-size: 3.5rem;
 }
 
 section.Critica div h2 img#tn{
@@ -444,8 +498,9 @@ section.Critica div h2#opiniones:hover{
 
 /* ELENCO Y DIRECCIÓN */
 
-section.elenco_y_direccion{
+ section.elenco_y_direccion{
 	max-width: 90%;
+	height: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	
@@ -528,28 +583,30 @@ section.elenco_y_direccion article.elenco{
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-content: space-between;
+	padding-bottom: 5%;
 }
 
 section.elenco_y_direccion article.elenco h1{
 	text-align: center;
-	font-size: 3.4rem;
+	font-size: 2.6rem;
 	width: 40%;
 	height: 3%;
 	margin-right: 50%;
 	font-weight: bolder;
 	color: red;
-	background-color: rgb(255, 200, 0 , 0.98);
-	border: 1.6rem solid rgb(255, 200, 0);
+	background-color: rgb(255, 200, 0 , 0.99);
+	border: 0.4rem solid red;
 	border-radius: 2rem;
 	text-shadow: 1px 2px 4px;
+	padding-top: 1.1rem;
 }
 
 section.elenco_y_direccion article.elenco div{
-	max-width: 40%;
-	max-height: 40%;
+	max-width: 35%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
+	align-content: center;
 	/* background-image: url(../Imagenes/fondo.jpg); */
 	background-color: rgb(255, 0 , 0 , 0.75);
 	border: 0.3rem solid rgb(255, 208, 0);
@@ -563,7 +620,7 @@ section.elenco_y_direccion article.elenco div{
 }
 
 section.elenco_y_direccion article.elenco div:hover{
-	box-shadow: 0.1rem 0.1rem 0.6rem rgb(255, 200, 0);
+	box-shadow: 0.1rem 0.1rem 2rem red;
 	
 }
 section.elenco_y_direccion article.elenco div h2{
@@ -582,9 +639,9 @@ section.elenco_y_direccion article.elenco div img{
 	border-top-right-radius: 0.6rem;
 	border-bottom-left-radius: 0.6rem;
 	border-bottom-right-radius: 0.6rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem;
 	margin-left: 1rem;
-	margin-right: 1rem;
+	margin-right: 1rem; */
 	
 }
 
@@ -601,13 +658,14 @@ section.elenco_y_direccion article.creadores h1{
 	text-align: center;
 	font-size: 3.4rem;
 	width: 40%;
-	height: 3%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	margin-left: 50%;
 	margin-top: 2%;
 	font-weight: bolder;
 	color: red;
-	background-color: rgb(255, 200, 0 , 0.98);
-	border: 1.6rem solid rgb(255, 200, 0);
+	background-color: rgb(255, 200, 0 , 0.99);
+	border: 0.4rem solid red;
 	border-radius: 2rem;
 	text-shadow: 1px 2px 4px;
 }
@@ -680,8 +738,14 @@ form label{
 	background-color: rgb(255, 0 , 0 );
 	color:rgb(255, 208, 0) ;
 	font-weight: bold;
-
+	transition: font-size 0.2s ease;
 }
+
+form label:hover{
+	font-size: 1.7rem;
+}
+
+
 form #nombre{
 	width: 70%;
 	height: 7%;
@@ -760,3 +824,160 @@ form button:hover{
 }
 
 /* FIN CONTACTO */
+
+/* GALERÍA Y PERSONAJES */
+
+
+section.personajes{
+	display: block;
+}
+
+section.personajes h1{
+	text-align: center;
+	font-size: 3.0rem;
+	width: 40%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding-right: 0.7%;
+	font-weight: bolder;
+	color: red;
+	background-color: rgb(255, 200, 0 , 0.98);
+	border: 1.6rem solid rgb(255, 200, 0);
+	border-radius: 2rem;
+	text-shadow: 1px 2px 4px;
+	transition: all 0.1s ease;
+}
+
+section.personajes h1:hover{
+	font-size: 3.4rem;
+}
+
+
+section.personajes article{
+	width: 100%;
+	height: 30rem;
+	margin-bottom: 3%; 
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background-color: rgb(206, 202, 202, 0.6);
+	transition: width,margin-bottom 0.2s ease;
+
+}
+
+section.personajes article img{
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section.personajes article div{
+	width: 65%;
+}
+
+section.personajes article div h2{
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+
+section.personajes article div p{
+	font-size: 2.4rem;
+	color: rgb(32, 32, 32);
+	font-style: italic;
+	text-align: left;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section.personajes article h2:hover{
+	text-shadow: 1px 1px 2px;
+}
+
+section.personajes article p:hover{
+	text-shadow: 1px 1px 2px;
+}
+
+section.personajes article:hover{
+	margin-bottom: 6%;
+	box-shadow: 0.1rem 0.2rem 5rem white; 
+}
+
+section.galeria{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-bottom: 15rem;
+	margin-bottom: 4rem;
+}
+
+section.galeria h2{
+	text-align: center;
+	font-size: 3.0rem;
+	width: 25%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	margin-left: 35%; 
+	font-weight: bolder;
+	color: red;
+	background-color:black;
+	border: 1.5rem solid black;
+	border-radius: 2rem;
+	text-shadow: 1px 2px 4px;
+	transition: color,background-color,border 0.2s ease;
+}
+
+section.galeria h2:hover{
+	color: red;
+	background-color: rgb(255, 200, 0 , 0.98);
+	border: 1.8rem solid rgb(255, 200, 0);
+}
+
+section.galeria article#gal{
+	width: 87%;
+	height: 90%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	border-radius: 0.7rem;
+	transition: box-shadow 0.3s ease-out;
+	
+}
+
+section.galeria article#gal:hover{
+	box-shadow: 0.2rem 0.2rem 0.5rem white;
+	border-color: white;
+}
+
+
+section.galeria article#gal a{
+	margin-top: 5%;
+	display: flex;
+	justify-content: flex-start;
+	width: 8%;
+	margin: 0%;
+}
+
+ section.galeria article#gal a img{
+	margin-top: 20%;
+	max-width: 100%;
+	max-height: 70%;
+	border-radius: 0.7rem;
+	transition:  border , box-shadow 0.4s ease;
+} 
+
+section.galeria article#gal a img:hover{
+	border: 0.2rem white;
+	box-shadow: 0.2rem 0.2rem 0.5rem white;
+}
+
+
+/* GALERÍA Y PERSONAJES */

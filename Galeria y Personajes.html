@@ -4,57 +4,82 @@
         <meta  charset = "UTF-8">
         <title> Seinfeld - Galeria y Personajes </title>
         <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+        <link href="../Pagina-Seinfeld/CSS/lightbox.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <a href="Index.html"><img src="Imagenes/Seinfeld_logo.png" alt="Logo"></a>
             <nav>
                 <ul>
-                    <li> <a href="#">Critica</a></li>
-                    <li> <a href="#">Temporadas</a></li>
-                    <li> <a href="#">Galeria y Personajes</a></li>
-                    <li> <a href="#">Elenco y Dirección</a></li>
-                    <li> <a href="#">Contacto</a></li>
+                    <li> <a href="Critica.html">Critica</a></li>
+                    <li> <a href="Temporadas.html">Temporadas</a></li>
+                    <li> <a href="Galeria y Personajes.html">Galeria y Personajes</a></li>
+                    <li> <a href="Elenco y Direccion.html">Elenco y Dirección</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <section class ="SPersonajes">
-            <h1> Personajes Principales </h1>
-            <div> <!--FALTA AÑADIR LAS RUTAS DE LAS IMAGENES-->
-                <img>
-                <p>George Costanza</p>
-                <p>Es amigo de Jerry desde la secundaria. Se caracteriza por ser negativo en gran cantidad de aspectos de su vida: vive quejándose de sus relaciones, es inseguro sobre sus capacidades, es bastante egoísta y se auto representa como un perdedor.  Más allá de eso, tiene una gran lealtad por sus amigos y, aunque no parezca, intenta Salir adelante.</p>
-            </div>
-            <div> <!--FALTA AÑADIR LAS RUTAS DE LAS IMAGENES-->
-                <img>
-                <p>Jerry Seinfeld</p>
-                <p>Es un personaje que se caracteriza por cuestionarse cosas absurdas, en parte porque de eso se trata su trabajo, ya que es comediante y realiza presentaciones al estilo Stand Up. Tiene un sentido del humor muy sarcástico, el cual usa a menudo con sus amigos. Cada episodio comienza con una pequeña escena introductoria en la cual realiza chistes generalmente acerca de lo que va a suceder en el capítulo. El apartamento de Jerry es uno de los lugares en donde transcurre gran parte de la serie. </p>
-            </div>
-            <div> <!--FALTA AÑADIR LAS RUTAS DE LAS IMAGENES-->
-                <img>
-                <p>Elaine Benes</p>
-                <p>Es exnovia y amiga de Jerry. Se caracteriza por su honestidad y sus reacciones frente a las situaciones que se le plantean. Tiende a quedar envuelta en problemas graciosos con sus novios y empleadores, generalmente tomando malas decisiones que luego la complican. Tiene un humor sarcástico con sus amigos, en cierta medida similar al de Jerry.</p>
-            </div>
-            <div> <!--FALTA AÑADIR LAS RUTAS DE LAS IMAGENES-->
-                <img>
-                <p>Cosmo Kramer</p>
-                <p>Es amigo de Jerry y además son compañeros de edificio. Es un personaje multifacético: hay veces que aparenta ser tonto e ignorante, y otras inteligente y vivaz. Tiene una vestimenta extremadamente particular y aparece en los episodios de una forma muy peculiar: entrando explosivamente por la puerta del apartamento de Jerry. Por último, tiene una forma de socializar muy relajada, lo cual lo hace ser exitoso en ese sentido.</p>
-            </div>
+        <section class ="personajes">
+                <h1> Personajes Principales </h1>
+               
+                <article id="george"> 
+                    <div>
+                        <h2>George Costanza</h2>
+                        <p>Amigo de Jerry desde la secundaria. Se caracteriza por ser negativo en gran cantidad de aspectos de su vida: vive quejándose de sus relaciones, es inseguro sobre sus capacidades, es bastante egoísta y se auto representa como un perdedor.  Más allá de eso, tiene una gran lealtad por sus amigos y, aunque no parezca, intenta Salir adelante.</p>
+                    </div>
+                    <img src="../Pagina-Seinfeld/Imagenes/George.jpg" alt="George Costanza">
+                </article>
 
-            <h1>Galería de Imagenes</h1>
-            <!--Acá va la galeria completa de Imagenes, es lo que faltaría-->
+                <article id="jerry"> 
+                    <img src="../Pagina-Seinfeld/Imagenes/Jerry2.jpg" alt="Jerry Seinfeld">
+                    <div>
+                        <h2>Jerry Seinfeld</h2>
+                        <p>Personaje que se caracteriza por cuestionarse cosas absurdas, en parte porque de eso se trata su trabajo, ya que es comediante y realiza presentaciones al estilo Stand Up. Tiene un sentido del humor muy sarcástico, el cual usa a menudo con sus amigos. Cada episodio comienza con una pequeña escena introductoria en la cual realiza chistes generalmente acerca de lo que va a suceder en el capítulo. El apartamento de Jerry es el lugar donde transcurre gran parte de la serie. </p>
+                    </div>
+                </article>
+
+                <article id="elaine"> 
+                    <div>
+                        <h2>Elaine Benes</h2>
+                        <p>Exnovia y amiga de Jerry. Se caracteriza por su honestidad y sus reacciones frente a las situaciones que se le plantean. Tiende a quedar envuelta en problemas graciosos con sus novios y empleadores, generalmente tomando malas decisiones que luego la complican. Tiene un humor sarcástico, en cierta medida similar al de Jerry.</p>
+                    </div>
+                    <img src="../Pagina-Seinfeld/Imagenes/Elaine2.jpg" alt="Elaine Benes">
+                </article>
+
+                <article id="kramer"> 
+                    <img src="../Pagina-Seinfeld/Imagenes/Cosmo Kramer.jpg" alt="Cosmo Kramer">
+                    <div>
+                        <h2>Cosmo Kramer</h2>
+                        <p>Amigo y vecino de Jerry. Es un personaje multifacético: hay veces que aparenta ser tonto e ignorante, y otras inteligente y vivaz. Tiene una vestimenta extremadamente particular y aparece en los episodios de una forma muy peculiar: entrando explosivamente por la puerta del apartamento. Tiene una forma de socializar muy relajada, lo cual lo hace ser exitoso en aspectos generales.</p>
+                    </div>
+                </article>
+        </section>
+
+        <section class="galeria">
+            <h2>Galería </h2>
+                <article id="gal">
+                    <a href="../Pagina-Seinfeld/Imagenes/Actores de Breaking Bad.jpg" data-lightbox="fotos" data-title="Actores de otra serie presentes en Seinfeld"><img src="../Pagina-Seinfeld/Imagenes/Actores de Breaking Bad.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Bar.jpg" data-lightbox="fotos" data-title="La cafetería, lugar donde transcurren muchas escenas"><img src="../Pagina-Seinfeld/Imagenes/Bar.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Elaine.jpg" data-lightbox="fotos" data-title="Elaine"><img src="../Pagina-Seinfeld/Imagenes/Elaine.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Episodio Piloto.jpg" data-lightbox="fotos" data-title = "Escena del episodio Piloto"><img src="../Pagina-Seinfeld/Imagenes/Episodio Piloto.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Final Serie.jpg" data-lightbox="fotos" data-title="El final"><img src="../Pagina-Seinfeld/Imagenes/Final Serie.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/George Padres.jpg" data-lightbox="fotos" data-title="George Costanza y sus Padres" ><img src="../Pagina-Seinfeld/Imagenes/George Padres.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Larry David.jpg" data-lightbox="fotos" data-title="Larry David junto a Jerry Seinfeld, ambos creadores de la sitcom"><img src="../Pagina-Seinfeld/Imagenes/Larry David.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Jerrys mother.jpg" data-lightbox="fotos" data-title="Jerry Seinfeld junto a su madre, Helen Seinfeld"><img src="../Pagina-Seinfeld/Imagenes/Jerrys mother.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Los-4-en-el-transporte-publico.jpg" data-lightbox="fotos" data-title="Escena del episodio El Metro"><img src="../Pagina-Seinfeld/Imagenes/Los-4-en-el-transporte-publico.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Newman.jpg" data-lightbox="fotos" data-title="Newman, personaje secundario de la serie"><img src="../Pagina-Seinfeld/Imagenes/Newman.jpg"></a>
+                    <a href="../Pagina-Seinfeld/Imagenes/Morty-Seinfeld.jpg" data-lightbox="fotos" data-title="Morty Seinfeld, padre de Jerry en la sitcom"><img src="../Pagina-Seinfeld/Imagenes/Morty-Seinfeld.jpg"></a>
+                </article>
             
         </section>
 
         <footer>
-            <nav>
-                <ul>
-                    <li> <a href="#">Critica</a></li>
-                    <li> <a href="#">Temporadas</a></li>
-                    <li> <a href="#">Galeria y Personajes</a></li>
-                    <li> <a href="#">Elenco y Dirección</a></li>
-                    <li> <a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            <a href="index.html"> <img src="Imagenes/Loguito.png" alt="Logo"></a>
+            <div>
+                <p>© 1989 - 1998 Columbia Pictures Television / Seinfeld</p>
+            </div>
+            <a href="https://www.instagram.com/seinfeldtv/?hl=es"><img src="Imagenes/instagram.png" alt="instagram" id="instagram"></a>
         </footer>
+        <script src="./js/lightbox-plus-jquery.js"></script>     
+    </body>
 </html>
