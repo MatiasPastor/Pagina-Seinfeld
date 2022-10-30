@@ -1611,9 +1611,11 @@ section.galeria{
 section.galeria h2{
 	font-size: 3rem;
 	width: 30%;
+	padding-right: 2%;
 	margin-top: 10%;
 	margin-left: 31%; 
 	font-weight: bolder;
+	
 }
 
 section.galeria article#gal{
