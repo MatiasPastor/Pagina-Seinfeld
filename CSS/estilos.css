@@ -1074,76 +1074,118 @@ section.galeria article#gal a img:hover{
 		width: 100%;
 		transition: unset;
 	}
-	
-	.icon{
-		margin-top: 0%;
-		float: right;
-		display: block;
-	}
 
+	/* HEADER */
+	
 	header{
-		display:flex ;
-		justify-content:space-between;
-		background-color: black;
-		height: 6rem;
+		height: auto;
 	}
 	
 	header a{
 		background-color: black;
-		width: 35%;
-		height: auto;
+		width: 50%;
+		 height: auto;
 		display: flex;
 		justify-content: center;
-		/* display: flex;
-		flex-flow: row nowrap;
-		justify-content: center; */
 		margin-bottom: 1%;
-		margin-top: 1%;
-		transition: none;
-	
+		margin-top: 1%;  
+		transition: unset; 
 	}
-	
+
+	.icon{
+		margin-top: 5%;	
+		float: right;
+		display: block;
+		transition: all 0s ease;
+	}
+
+	.icon img{
+		width: 35%;
+		margin-left: 40%;
+		height: auto;
+		transition: all 0s ease;
+	}
+
 	header a img{
 		width: 100%;
 		height: 90%; 
+		transition: all 0s ease 0s;
+	}
+
+	header a#log_seinfeld img{
+		width: 100%;
+		height: 90%; 
+		transition: all 0s ease 0s;
+	
+	
+	}
+	header a#log_seinfeld{
+		width: 50%;
+		height: 60%;
 	}
 	
-	body header nav{
-		width: 55%;
+	
+	header nav#navegador{
+		background-color: black;
+	}
+
+	header nav#navegador ul{
+		display: none;
+	}
+
+	header nav#navegador ul li{
+		display: none;
+	}
+
+	header nav#navegador ul li a{
+		display: none;
 	}
 	
+	 header nav#navegador.responsive{
+		display: block;
+		max-width: 70%;
+		height: auto;
+		padding-bottom: 5%;
+		margin-bottom: 5%;
+		background-color: red;
+	}
+
+	 header #navegador.responsive a{
+		margin-top: 5%;	
+		float: right;
+		display: block;
+		background-color: transparent;
+		filter: drop-shadow(5px 5px 5px black);
+	} 
 	
-	body header nav ul{
-		background-color: rgb(255, 208, 0);
+	header #navegador.responsive ul{
+		background-color: transparent;
 		height: 30%;
-		display:flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
+		display: block;
 		border-radius: 5px;	
 		margin-top: 4%;
 		margin-right: 5%;
-		display: none;
-		
+		transition: all 0s ease;		
 	}
 	
-	 body header nav ul li{	  
+	header #navegador.responsive ul li{	  
 		text-shadow: 1px 4px 4px;
-		display: flex;
-		flex-flow: column nowrap;
-		align-self: center;
-		
+		background-color: red;
+		display: block;
+		transition: all 0s ease;
 	}
 	
-	body header nav ul li a{
+	header #navegador.responsive ul li a{
 		background-color: rgb(255, 208, 0);
 		color: red;
 		text-decoration: none;
 		text-align: center;
 		transition: all 0.2s ease-in-out;
 		font-size: 1.6rem;
-		width: 100%;
+		width: 95%;
+		transition: all 0s ease;
 		
-	} 
+	}   
 
 	/*FIN HEADER*/
 
@@ -1162,6 +1204,7 @@ footer{
 
 footer div{
 	display: none;
+	transition: all 0s ease;
 }
 
 
@@ -1170,6 +1213,7 @@ footer a{
 	height: 30%;
 	margin-right: 10%;
 	transition: none;
+	transition: all 0s ease;
 	
 }
 
@@ -1177,11 +1221,13 @@ footer #instagram{
 	 width: 13%;
 	height: 7%;
 	padding-bottom: 2%; 
+	transition: all 0s ease;
 }
 
 footer #instagram img{
 	margin-top: 60%;
 	margin-left: 10%;
+	transition: all 0s ease;
 }
 
 /*FIN FOOTER*/
@@ -1392,8 +1438,7 @@ section.Critica div p{
 section.elenco_y_direccion{
 	max-width: 90%;
 	height: 100%;
-	display: flex;
-	flex-flow: row wrap;
+	display: block;
 }
 
 
@@ -1403,100 +1448,9 @@ section.elenco_y_direccion aside.banda_sonora{
 
 }
 
-section.elenco_y_direccion aside.banda_sonora div{
-	width: 92.5%;
-	height: 25%;
-	margin-left:  auto;
-	margin-right: auto;
-	margin-top: 15%;
-	display: flex;
-	flex-flow: row wrap;
-	border: 0.3rem dashed black;
-	padding-left: 0.2rem;
-	padding-right: 0.2rem;
-	transition: all 0.7s ease;
-}
-
-section.elenco_y_direccion aside.banda_sonora div:hover{
-	background-color: rgb(39, 92, 189);
-}
-
-section.elenco_y_direccion aside.banda_sonora div h3{
-	font-size: 1.5rem;
-	width: 100%;
-	padding-top: 4%;
-	text-align: center;
-	/* margin-bottom: 1rem; */
-	margin-top: 1rem;
-	color: red;
-	font-weight: bold;
-	text-shadow: 0.1rem 0.1rem 0.4rem;
-	
-}
-
-section.elenco_y_direccion aside.banda_sonora div p{
-	font-size: 1.3rem;
-	text-align: center;	
-	margin-bottom: 2%;
-	color: white;
-	margin-left: 5%;
-	margin-right: 5%;
-	transition: all 0.3s ease;
-}
-
-section.elenco_y_direccion aside.banda_sonora div p:hover{
-	text-shadow: 0.1rem 0.1rem 0.3rem;
-	padding-bottom: 2rem;
-}
-
-
-section.elenco_y_direccion aside.banda_sonora div a {
-	width: 90%;
-	height: 65%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 4rem;
-	margin-top: 5%;
-	display: flex;
-	justify-content: center;
-	
-}
-section.elenco_y_direccion aside.banda_sonora div a img{
-	width: 100%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 0.4rem red solid;
-	
-	transition: all 0.3s ease;
-}
-
-section.elenco_y_direccion aside.banda_sonora div a img:hover{
-	box-shadow: 0.1rem 0.2rem 4rem rgb(255, 200, 0);
-}
-
-
-section.elenco_y_direccion aside.banda_sonora img#miniatura{
-	margin-top: 45%;
-	margin-bottom: 50%;
-	height: 10%;
-	width: auto;
-	margin-left: 22%;
-	transition: all 1s ease;
-
-}
-
-section.elenco_y_direccion aside.banda_sonora img#miniatura:hover{
-	filter: drop-shadow(0.1rem 0.1rem 0.5rem red);
-	transform: rotate(360deg);
-
-}
-
-
-
 section.elenco_y_direccion article.elenco{
-	max-width: 79.25%;
-	max-height: 60%;
+	max-width: 100%;
+	max-height: 70%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -1508,69 +1462,14 @@ section.elenco_y_direccion article.elenco{
 }
 
 section.elenco_y_direccion article.elenco h1{
-	text-align: center;
-	font-size: 2rem;
-	width: 40%;
-	margin-right: 50%;
-	margin-top: 2%;
-	font-weight: bolder;
-	color: red;
-	background-color: rgb(255, 200, 0 , 0.99);
-	border: 0.4rem solid red;
-	border-radius: 2rem;
-	text-shadow: 1px 2px 4px;
-	padding-top: 1.1rem;
-	padding-bottom: 1.1rem;
-	transition: all 0.3s ease;
+	font-size: 1.8rem;
+	width: 45%;
 
 }
-section.elenco_y_direccion  article.elenco h1:hover{
-	font-size: 2.4rem;
-}
+
 section.elenco_y_direccion article.elenco div{
-	max-width: 20%;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-content: center;
-	background-color: rgb(255, 0 , 0 , 0.75);
-	border: 0.3rem solid rgb(255, 208, 0);
-	margin-top: 5%;
-	margin-bottom: 2%;
-	border-radius: 1rem;
-	text-shadow: 0.1rem 0.1rem 0.8rem;
-	font-weight: bold;
-	transition: all 0.4s ease;
-	
+	max-width: 45%;	
 }
-
-section.elenco_y_direccion article.elenco div:hover{
-	box-shadow: 0.1rem 0.1rem 2rem red;
-	padding: 1.2rem;
-	
-}
-section.elenco_y_direccion article.elenco div h2{
-	color: rgb(255, 208, 0);
-	font-size: 1.3rem;
-	text-align: center;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-section.elenco_y_direccion article.elenco div img{
-	max-width: 98%;
-	max-height: 95%;
-	margin: auto;
-	border-top-left-radius: 0.6rem;
-	border-top-right-radius: 0.6rem;
-	border-bottom-left-radius: 0.6rem;
-	border-bottom-right-radius: 0.6rem;
-	/* margin-bottom: 2rem;
-	margin-left: 1rem;
-	margin-right: 1rem; */
-	
-}
-
 
 
 section.elenco_y_direccion article.creadores{
@@ -1586,61 +1485,163 @@ section.elenco_y_direccion article.creadores{
 }
 
 section.elenco_y_direccion article.creadores h1{
-	text-align: center;
-	font-size: 2.5rem;
-	width: 30%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	margin-left: 60%;
+	width: 50%;
+	margin-left: 40%;
 	margin-top: 2%; 
-	font-weight: bolder;
-	color: red;
-	background-color: rgb(255, 200, 0 , 0.99);
-	border: 0.4rem solid red;
-	border-radius: 2rem;
-	text-shadow: 1px 2px 4px;
-	transition: all 0.5s ease;
-}
-
-section.elenco_y_direccion  article.creadores h1:hover{
-	font-size: 2.95rem;
 }
 
 section.elenco_y_direccion article.creadores div{
-	max-width: 50%;
-	max-height: 50%;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	/* background-image: url(../Imagenes/fondo.jpg); */
-	background-color: rgb(255, 0 , 0 , 0.75);
-	border: 0.3rem solid rgb(255, 208, 0);
-	margin-top: 5%;
-	border-radius: 1rem;
-	text-shadow: 0.1rem 0.1rem 0.8rem;
-	font-weight: bold;
-	transition: all 0.8s ease;
-}
-
-section.elenco_y_direccion article.creadores div img{
-	margin: 1rem;
-	border-radius: 1rem;
-}
-section.elenco_y_direccion article.creadores div:hover{
-	box-shadow: 0.1rem 0.1rem 2rem red;
-	padding: 1.5rem;
-}
-
-section.elenco_y_direccion article.creadores div h2{
-	color: rgb(255, 208, 0);
-	font-size: 1.6rem;
-	text-align: center;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	max-width: 90%;
+	max-height: 95%;
 }
 
 /* FIN ELENCO Y DIRECCIÓN */
 
 
+/* CONTACTO */
+section.contacto form{
+	margin-left: 2%;
+	max-width: 90%;
+	max-height: 85%;
+	padding-right: 3%;
+}
+
+
+form label{
+	margin-left: 2%;
+	padding-bottom: 2%;
+	font-size: 1.2rem;
+}
+
+
+form #nombre{
+	width: 75%;
+	height: 10%;
+	margin-top: 0.1%;
+	font-size: 1.2rem;
+}
+
+form #email{
+	width: 75%;
+	height: 10%;
+	margin-top: 0.1%;
+	font-size: 1.2rem;
+}
+ 
+form #lab_con{
+	width: 25%;
+	margin-left: 2%;
+	padding-bottom: 0%;
+}
+
+form #consulta{
+	width: 97%;
+	margin-left: 2%;
+	height: 25%;
+	font-size: 1.2rem;
+}
+
+form #consulta::placeholder{
+	font-size: 1.2rem;
+}
+
+
+form button{
+	width: 35%;
+	height: 11%;	
+	font-size: 1.8rem;
+	transition: none;
+}
+/* FIN CONTACTO */
+
+
+/* GALERÍA Y PERSONAJES */
+
+
+section.personajes{
+	padding-top: 5%;
+}
+
+section.personajes h1{
+	font-size: 2.3rem;
+	width: 42%;
+	border: 1.2rem solid rgb(255, 200, 0);
+	margin-bottom:10%;
+	transition: none;
+}
+
+section.personajes article{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20%; 
+	display: block;
+	transition: none;
+
+}
+
+section.personajes article img{
+	width: 85%;
+	height: auto;
+	margin-left: 10%;
+}
+
+section.personajes article div{
+	width: 100%;
+}
+
+section.personajes article div h2{
+	font-size: 2.5rem;
+	padding-top: 3%;
+}
+
+section.personajes article div p{
+	font-size: 2rem;
+	padding-bottom: 10%;
+}
+
+
+section.galeria{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-bottom: 20rem;
+
+}
+
+section.galeria h2{
+	font-size: 3rem;
+	width: 30%;
+	margin-top: 10%;
+	margin-left: 31%; 
+	font-weight: bolder;
+}
+
+section.galeria article#gal{
+	width: 97%;
+	height: 95%;
+	padding-bottom: 10%;
+	
+}
+
+
+section.galeria article#gal a{
+	margin-top: 5%;
+	display: flex;
+	justify-content: flex-start;
+	width: 45%;
+	height: auto;
+	margin: 0%;
+}
+
+ section.galeria article#gal a img{
+	margin-top: 20%;
+	max-width: auto;
+	max-height: 80%;
+} 
+
+/* FIN GALERÍA Y PERSONAJES */
+
+
+/*	Final del código css */
 
 }
