@@ -2,13 +2,18 @@
 <html lang="en">
     <head>
         <meta  charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Seinfeld - Contacto </title>
         <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <a href="Index.html"><img src="Imagenes/Seinfeld_logo.png" alt="Logo"></a>
+            <a href="index.html"><img src="Imagenes/Seinfeld_logo.png" alt="Logo"></a>
             <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../Pagina-Seinfeld/Imagenes/menu.jpg" alt="Menu" class="fa fa-bars"> </a>
                 <ul>
                     <li> <a href="Critica.html">Crítica</a></li>
                    <li> <a href="Temporadas.html">Temporadas</a></li>
@@ -36,7 +41,20 @@
         <div>
             <p>© 1989 - 1998 Columbia Pictures Television / Seinfeld</p>
         </div>
-        <a href="https://www.instagram.com/seinfeldtv/?hl=es"><img src="Imagenes/instagram.png" alt="instagram" id="instagram"></a>
+        <a href="https://www.instagram.com/seinfeldtv/?hl=es" target="_blank" id="instagram"><img src="Imagenes/instagram.png" alt="instagram" ></a>
     </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+}
+
+    </script>
+
     </body>
 </html>

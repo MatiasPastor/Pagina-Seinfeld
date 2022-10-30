@@ -2,15 +2,20 @@
 <html lang="en">
     <head>
         <meta  charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Seinfeld - Elenco y Dirección </title>
         <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <a href="Index.html"><img src="Imagenes/Seinfeld_logo.png" alt="Logo"></a>
+            <a href="index.html"><img src="Imagenes/Seinfeld_logo.png" alt="Logo"></a>
             <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../Pagina-Seinfeld/Imagenes/menu.jpg" alt="Menu" class="fa fa-bars"> </a>
                 <ul>
-                    <li> <a href="Critica.html">Critica</a></li>
+                    <li> <a href="Critica.html">Crítica</a></li>
                     <li> <a href="Temporadas.html">Temporadas</a></li>
                     <li> <a href="Galeria y Personajes.html">Galeria y Personajes</a></li>
                     <li> <a href="Elenco y Direccion.html">Elenco y Dirección</a></li>
@@ -47,20 +52,37 @@
                 </div>
 
                 <div>
+                    <h2>Estelle Harris</h2>
+                    <img src="../Pagina-Seinfeld/Imagenes/Estelle Harris.jpg" alt="Estelle Harris">
+                </div>
+
+                <div>
                     <h2>Jerry Stiller</h2>
                     <img src="../Pagina-Seinfeld/Imagenes/Jerry Stiller.jpg" alt="Jerry Stiller">
                 </div>
+
                 <div>
                     <h2>Barney Martin</h2>
                     <img src="../Pagina-Seinfeld/Imagenes/Barney Martin.jpg" alt="Barney Martin">
+                </div>
+                
+                <div>
+                    <h2>Liz Sheridan</h2>
+                    <img src="../Pagina-Seinfeld/Imagenes/Liz Sheridan.jpg" alt="Liz Sheridan">
                 </div>
         </article>
 
         <aside class = "banda_sonora">
             <div>
+                <h3>¿Sabias Que..?</h3>
+                <p>Jerry Seinfeld rechazó una oferta de <b>100 millones de dólares de parte de NBC</b>, quien puso ese dinero sobre la mesa con la esperanza de que lo indujera a darles otra temporada del programa.</p>
+            </div>
+            
+            <img src="../Pagina-Seinfeld/Imagenes/miniatura.png" alt="personajes principales" id="miniatura">
+            
+            <div>
                 <h3>¡Escucha la Banda Sonora de Seinfeld!</h3>
                 <a href="https://www.youtube.com/watch?v=ukBhySnM06U" target="_blank"><img src="../Pagina-Seinfeld/Imagenes/Banda Sonora.jpg" alt="banda sonora"></a>
-                <img src="../Pagina-Seinfeld/Imagenes/miniatura.png" alt="personajes principales" id="miniatura">
             </div>
         </aside>
 
@@ -79,8 +101,20 @@
             <div>
                 <p>© 1989 - 1998 Columbia Pictures Television / Seinfeld</p>
             </div>
-            <a href="https://www.instagram.com/seinfeldtv/?hl=es"><img src="Imagenes/instagram.png" alt="instagram" id="instagram"></a>
+            <a href="https://www.instagram.com/seinfeldtv/?hl=es" target="_blank" id="instagram"><img src="Imagenes/instagram.png" alt="instagram"></a>
         </footer>
+
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("navegador");
+              if (x.className === "") {
+                x.className += "responsive";
+              } else {
+                x.className = "";
+              }
+    }
+    
+        </script>
 
     </body>
 </html>
