@@ -1316,5 +1316,331 @@ section article#art2 div p{
 
 /*FIN INDEX*/
 
+/* TEMPORADAS */
+
+section.contenedor_tabla{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 7%;
+	padding-bottom: 40%;
+}
+
+section.contenedor_tabla table{
+	width: 95%;
+	max-height: 70%;
+	background-image: url(../Imagenes/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	border-collapse: collapse;
+	transition: all 0.3s ease;
+}
+/*FIN TEMPORADAS*/
+
+/* CRÍTICA */
+section.Critica{
+	max-width: 95%;
+}
+
+section.Critica h1{
+	text-align: center;
+	font-size: 2.2rem;
+	width: 40%;
+	margin-left: 45%;
+}
+
+section.Critica div{
+	display: block;
+	width: 100%;
+	max-height: 30%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: rgb(206, 202, 202, 0.6);
+}
+
+section.Critica div h2{
+	font-size: 2.3rem;
+}
+
+section.Critica div h2 img#tn{
+	width: 3rem;
+}
+
+section.Critica div h2 img#empire{
+	width: 16.5%;
+	height: 15.5%;
+}
+
+section.Critica div h2 img#guardian{
+	width: 21%;
+	height: 20%;
+}
+
+section.Critica div blockquote{
+	font-size: 1.9rem;
+}
+
+section.Critica div p{
+	font-size: 1.65rem;
+	padding-bottom: 6%;
+}
+
+/* FIN CRÍTICIA */
+/* ELENCO Y DIRECCIÓN */
+
+section.elenco_y_direccion{
+	max-width: 90%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
+section.elenco_y_direccion aside.banda_sonora{
+	display: none;
+	visibility: hidden;
+
+}
+
+section.elenco_y_direccion aside.banda_sonora div{
+	width: 92.5%;
+	height: 25%;
+	margin-left:  auto;
+	margin-right: auto;
+	margin-top: 15%;
+	display: flex;
+	flex-flow: row wrap;
+	border: 0.3rem dashed black;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	transition: all 0.7s ease;
+}
+
+section.elenco_y_direccion aside.banda_sonora div:hover{
+	background-color: rgb(39, 92, 189);
+}
+
+section.elenco_y_direccion aside.banda_sonora div h3{
+	font-size: 1.5rem;
+	width: 100%;
+	padding-top: 4%;
+	text-align: center;
+	/* margin-bottom: 1rem; */
+	margin-top: 1rem;
+	color: red;
+	font-weight: bold;
+	text-shadow: 0.1rem 0.1rem 0.4rem;
+	
+}
+
+section.elenco_y_direccion aside.banda_sonora div p{
+	font-size: 1.3rem;
+	text-align: center;	
+	margin-bottom: 2%;
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	transition: all 0.3s ease;
+}
+
+section.elenco_y_direccion aside.banda_sonora div p:hover{
+	text-shadow: 0.1rem 0.1rem 0.3rem;
+	padding-bottom: 2rem;
+}
+
+
+section.elenco_y_direccion aside.banda_sonora div a {
+	width: 90%;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 4rem;
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	
+}
+section.elenco_y_direccion aside.banda_sonora div a img{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0.4rem red solid;
+	
+	transition: all 0.3s ease;
+}
+
+section.elenco_y_direccion aside.banda_sonora div a img:hover{
+	box-shadow: 0.1rem 0.2rem 4rem rgb(255, 200, 0);
+}
+
+
+section.elenco_y_direccion aside.banda_sonora img#miniatura{
+	margin-top: 45%;
+	margin-bottom: 50%;
+	height: 10%;
+	width: auto;
+	margin-left: 22%;
+	transition: all 1s ease;
+
+}
+
+section.elenco_y_direccion aside.banda_sonora img#miniatura:hover{
+	filter: drop-shadow(0.1rem 0.1rem 0.5rem red);
+	transform: rotate(360deg);
+
+}
+
+
+
+section.elenco_y_direccion article.elenco{
+	max-width: 79.25%;
+	max-height: 60%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	padding-bottom: 5%;
+	/* border: 0.39rem solid red; */
+	background-image: url(../Imagenes/cafeteria.jpg);
+	background-size: cover;
+}
+
+section.elenco_y_direccion article.elenco h1{
+	text-align: center;
+	font-size: 2rem;
+	width: 40%;
+	margin-right: 50%;
+	margin-top: 2%;
+	font-weight: bolder;
+	color: red;
+	background-color: rgb(255, 200, 0 , 0.99);
+	border: 0.4rem solid red;
+	border-radius: 2rem;
+	text-shadow: 1px 2px 4px;
+	padding-top: 1.1rem;
+	padding-bottom: 1.1rem;
+	transition: all 0.3s ease;
+
+}
+section.elenco_y_direccion  article.elenco h1:hover{
+	font-size: 2.4rem;
+}
+section.elenco_y_direccion article.elenco div{
+	max-width: 20%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	background-color: rgb(255, 0 , 0 , 0.75);
+	border: 0.3rem solid rgb(255, 208, 0);
+	margin-top: 5%;
+	margin-bottom: 2%;
+	border-radius: 1rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem;
+	font-weight: bold;
+	transition: all 0.4s ease;
+	
+}
+
+section.elenco_y_direccion article.elenco div:hover{
+	box-shadow: 0.1rem 0.1rem 2rem red;
+	padding: 1.2rem;
+	
+}
+section.elenco_y_direccion article.elenco div h2{
+	color: rgb(255, 208, 0);
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+section.elenco_y_direccion article.elenco div img{
+	max-width: 98%;
+	max-height: 95%;
+	margin: auto;
+	border-top-left-radius: 0.6rem;
+	border-top-right-radius: 0.6rem;
+	border-bottom-left-radius: 0.6rem;
+	border-bottom-right-radius: 0.6rem;
+	/* margin-bottom: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem; */
+	
+}
+
+
+
+section.elenco_y_direccion article.creadores{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-image: url(../Imagenes/fondo2.jpg);
+	background-size: cover;
+	border-top: 2rem solid rgba(0, 0, 0, 0.945); 
+	padding-bottom: 14rem;
+}
+
+section.elenco_y_direccion article.creadores h1{
+	text-align: center;
+	font-size: 2.5rem;
+	width: 30%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-left: 60%;
+	margin-top: 2%; 
+	font-weight: bolder;
+	color: red;
+	background-color: rgb(255, 200, 0 , 0.99);
+	border: 0.4rem solid red;
+	border-radius: 2rem;
+	text-shadow: 1px 2px 4px;
+	transition: all 0.5s ease;
+}
+
+section.elenco_y_direccion  article.creadores h1:hover{
+	font-size: 2.95rem;
+}
+
+section.elenco_y_direccion article.creadores div{
+	max-width: 50%;
+	max-height: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	/* background-image: url(../Imagenes/fondo.jpg); */
+	background-color: rgb(255, 0 , 0 , 0.75);
+	border: 0.3rem solid rgb(255, 208, 0);
+	margin-top: 5%;
+	border-radius: 1rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem;
+	font-weight: bold;
+	transition: all 0.8s ease;
+}
+
+section.elenco_y_direccion article.creadores div img{
+	margin: 1rem;
+	border-radius: 1rem;
+}
+section.elenco_y_direccion article.creadores div:hover{
+	box-shadow: 0.1rem 0.1rem 2rem red;
+	padding: 1.5rem;
+}
+
+section.elenco_y_direccion article.creadores div h2{
+	color: rgb(255, 208, 0);
+	font-size: 1.6rem;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* FIN ELENCO Y DIRECCIÓN */
+
+
 
 }
