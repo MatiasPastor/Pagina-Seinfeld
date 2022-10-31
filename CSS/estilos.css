@@ -794,7 +794,7 @@ section.contacto form{
 	padding-bottom: 1%;
 	display: flex;
 	flex-flow: row wrap;
-	background-image: url(../Imagenes/fondo.jpg);
+	background-image: url(../Imagenes/Fondo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	border: 0.4rem solid red;
